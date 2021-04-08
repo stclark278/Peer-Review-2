@@ -1,0 +1,6 @@
+C:\Users\stcla\OneDrive\Documents\DSU Comp Sci Degree\Spring 2021\CSC 260 - Object Oriented Design\Assignments\CSC 260 - Assignment #4\Banner\obj\Debug\Banner.csprojAssemblyReference.cache
+C:\Users\stcla\OneDrive\Documents\DSU Comp Sci Degree\Spring 2021\CSC 260 - Object Oriented Design\Assignments\CSC 260 - Assignment #4\Banner\obj\Debug\Banner.csproj.CoreCompileInputs.cache
+C:\Users\stcla\OneDrive\Documents\DSU Comp Sci Degree\Spring 2021\CSC 260 - Object Oriented Design\Assignments\CSC 260 - Assignment #4\Banner\bin\Debug\Banner.dll
+C:\Users\stcla\OneDrive\Documents\DSU Comp Sci Degree\Spring 2021\CSC 260 - Object Oriented Design\Assignments\CSC 260 - Assignment #4\Banner\bin\Debug\Banner.pdb
+C:\Users\stcla\OneDrive\Documents\DSU Comp Sci Degree\Spring 2021\CSC 260 - Object Oriented Design\Assignments\CSC 260 - Assignment #4\Banner\obj\Debug\Banner.dll
+C:\Users\stcla\OneDrive\Documents\DSU Comp Sci Degree\Spring 2021\CSC 260 - Object Oriented Design\Assignments\CSC 260 - Assignment #4\Banner\obj\Debug\Banner.pdb

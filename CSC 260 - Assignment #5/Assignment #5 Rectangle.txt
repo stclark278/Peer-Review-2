@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CSC_260_Assignment_2
+{
+
+    public class Rectangle : Shape
+    {
+        public double _height;
+        public double _width;
+        public double area;
+        public double perimeter;
+        double DefaultHeight = 1;
+        double DefaultWidth = 1;
+
+        //default constructor
+        public Rectangle()
+        {
+            _height = DefaultHeight;
+            _width = DefaultWidth;
+        }
+
+        //parameterized consturctor
+        public Rectangle(double height, double width)
+        {
+            _height = height;
+            _width = width;
+        }
+
+        //copy constructor
+        public Rectangle(Rectangle r)
+        {
+            _height = r._height;
+            _width = r._width;
+        }
+
+        public override double CalculateArea()
+        {
+            area = _height * _width;
+            return area;
+        }
+
+        public override double CalculatePerimeter()
+        {
+            perimeter = (2 * _height) + (2 * _width);
+            return perimeter;
+        }
+
+        public static double CalculatePerimeter(double height, double width)
+        {
+            double perimeter = (2 * height) + (2 * width);
+            return perimeter;
+        }
+
+        public static bool operator <(Rectangle self, Rectangle other)
+        {
+            return self.CalculatePerimeter() < other.CalculatePerimeter();
+        }
+
+        public static bool operator <=(Rectangle self, Rectangle other)
+        {
+            return self.CalculatePerimeter() <= other.CalculatePerimeter();
+        }
+
+        public static bool operator >(Rectangle self, Rectangle other)
+        {
+            return self.CalculatePerimeter() > other.CalculatePerimeter();
+        }
+
+        public static bool operator >=(Rectangle self, Rectangle other)
+        {
+            return self.CalculatePerimeter() >= other.CalculatePerimeter();
+        }
+
+        public static bool operator ==(Rectangle self, Rectangle other)
+        {
+            if (self._width == other._width)
+            {
+                if (self._height == other._height)
+                {
+                    return true;
+                }
+            }
+            else if (self._width == other._height)
+            {
+                if (self._height == other._width)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public static bool operator !=(Rectangle self, Rectangle other)
+        {
+            if (self == other)
+            {
+                return false;
+            }
+        return true;
+        }
+    }
+}

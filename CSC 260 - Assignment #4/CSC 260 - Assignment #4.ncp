@@ -1,0 +1,390 @@
+<Project>
+  <Name>CSC 260 - Assignment #4</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Banner</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Person</Name>
+        <Access>Public</Access>
+        <Location left="281" top="44" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private static int UserID</Member>
+        <Member type="Field">private int UserRole</Member>
+        <Member type="Field">private string UserName</Member>
+        <Member type="Method">public void BrowseCourses()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Advisor</Name>
+        <Access>Public</Access>
+        <Location left="40" top="331" />
+        <Size width="162" height="417" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private static int UserID</Member>
+        <Member type="Field">private string UserRole</Member>
+        <Member type="Field">public string UserName</Member>
+        <Member type="Field">private string UserAddress</Member>
+        <Member type="Field">private string UserPhoneNumber</Member>
+        <Member type="Field">private string UserEmail</Member>
+        <Member type="Property">protected int UserID { get; }</Member>
+        <Member type="Property">public int UserRole { get; }</Member>
+        <Member type="Property">public int UserName { get; }</Member>
+        <Member type="Property">public int UserAddress { get; set; }</Member>
+        <Member type="Property">public int UserPhoneNumber { get; set; }</Member>
+        <Member type="Property">public string UserEmail { get; set; }</Member>
+        <Member type="Method">public void ViewAdviseeList()</Member>
+        <Member type="Method">public void RemoveRegistrationHolds()</Member>
+        <Member type="Method">public void ViewStudentProfiles()</Member>
+        <Member type="Method">public void EvaluateAdviseesDegreeProgress()</Member>
+        <Member type="Method">public void ViewAdviseesCurrentRegistration()</Member>
+        <Member type="Method">public void BrowseCourses(int UserID, string UserRole, int StudentID)</Member>
+        <Member type="Method">public void ViewProfile(int UserID)</Member>
+        <Member type="Constructor">public Advisor(int UserID, int UserRole, string UserName)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Faculty</Name>
+        <Access>Public</Access>
+        <Location left="281" top="331" />
+        <Size width="162" height="400" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private static int UserID</Member>
+        <Member type="Field">private string UserRole</Member>
+        <Member type="Field">public int UserName</Member>
+        <Member type="Field">private string UserAddress</Member>
+        <Member type="Field">private string UserPhoneNumber</Member>
+        <Member type="Field">private string UserEmail</Member>
+        <Member type="Property">protected int UserID { get; }</Member>
+        <Member type="Property">public int UserRole { get; }</Member>
+        <Member type="Property">public int UserName { get; }</Member>
+        <Member type="Property">public string UserAddress { get; set; }</Member>
+        <Member type="Property">public string UserPhoneNumber { get; set; }</Member>
+        <Member type="Property">public int UserEmail { get; set; }</Member>
+        <Member type="Method">public void ViewMySchedule()</Member>
+        <Member type="Method">public void BrowseCourses(int UserID, string UserRole)</Member>
+        <Member type="Method">public boolean EnterGrades()</Member>
+        <Member type="Method">public void ViewCourseWaitlist()</Member>
+        <Member type="Method">public boolean ManagePrerequisits()</Member>
+        <Member type="Method">public void ViewProfile(int UserID)</Member>
+        <Member type="Constructor">public Faculty(int UserID, int UserRole, string UserName)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Student</Name>
+        <Access>Public</Access>
+        <Location left="524" top="331" />
+        <Size width="162" height="400" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private static int UserID</Member>
+        <Member type="Field">private string UserRole</Member>
+        <Member type="Field">public string UserName</Member>
+        <Member type="Field">private string UserAddress</Member>
+        <Member type="Field">private string UserPhoneNumber</Member>
+        <Member type="Field">private string UserEmail</Member>
+        <Member type="Property">protected int UserID { get; }</Member>
+        <Member type="Property">public int UserRole { get; }</Member>
+        <Member type="Property">public string UserName { get; }</Member>
+        <Member type="Property">public int UserAddress { get; set; }</Member>
+        <Member type="Property">public string UserPhoneNumber { get; set; }</Member>
+        <Member type="Property">public string UserEmail { get; set; }</Member>
+        <Member type="Method">public void PrepareForRegistration()</Member>
+        <Member type="Method">public boolean RegisterForClasses()</Member>
+        <Member type="Method">public void PlanAhead()</Member>
+        <Member type="Method">public void BrowseCourses(int UserID, string UserRole)</Member>
+        <Member type="Method">public void ViewRegistrationInformation()</Member>
+        <Member type="Method">public void ViewProfile(int userID)</Member>
+        <Member type="Constructor">public Student(int UserID, int UserRole, string UserName)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CourseCatalog</Name>
+        <Access>Public</Access>
+        <Location left="40" top="935" />
+        <Size width="162" height="333" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int Term</Member>
+        <Member type="Field">string University</Member>
+        <Member type="Field">string Location</Member>
+        <Member type="Field">string Subject</Member>
+        <Member type="Field">int CourseNumber</Member>
+        <Member type="Field">string CourseName</Member>
+        <Member type="Field">string CourseSection</Member>
+        <Member type="Field">int CRN</Member>
+        <Member type="Field">int Credits</Member>
+        <Member type="Field">string Instructor</Member>
+        <Member type="Field">string Days</Member>
+        <Member type="Field">int SeatsAvailable</Member>
+        <Member type="Field">int SeatsFilled</Member>
+        <Member type="Method">public void SearchCourses(int Term, string University, string Location, string Subject, int CourseNumber)</Member>
+        <Member type="Method">public void ViewCourse()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Profile</Name>
+        <Access>Public</Access>
+        <Location left="795" top="452" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int UserID</Member>
+        <Member type="Method">public void GetUserProfile(int userID)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Course</Name>
+        <Access>Public</Access>
+        <Location left="40" top="1358" />
+        <Size width="162" height="536" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int Term</Member>
+        <Member type="Field">string University</Member>
+        <Member type="Field">string Location</Member>
+        <Member type="Field">string Subject</Member>
+        <Member type="Field">int CourseNumber</Member>
+        <Member type="Field">string CourseName</Member>
+        <Member type="Field">string CourseSection</Member>
+        <Member type="Field">int CRN</Member>
+        <Member type="Field">int Credits</Member>
+        <Member type="Field">string Instructor</Member>
+        <Member type="Field">string Days</Member>
+        <Member type="Field">int SeatsAvailable</Member>
+        <Member type="Field">int SeatsFilled</Member>
+        <Member type="Field">int CourseSelected</Member>
+        <Member type="Constructor">public Course(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowClassDetails(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowCourseDescription(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowInstructor(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowWaitlist(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowRestrictions(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowPrerequisites(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowCorequisits(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowCrossListedCourses(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowGenEdHonorsIndicator(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowCatalogInfo(int Term, int CRN)</Member>
+        <Member type="Method">public void ShowFees(int Term, int CRN)</Member>
+        <Member type="Method">public int SelectCourse()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CourseList</Name>
+        <Access>Public</Access>
+        <Location left="524" top="935" />
+        <Size width="162" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int Term</Member>
+        <Member type="Field">string CourseName</Member>
+        <Member type="Field">int CRN</Member>
+        <Member type="Field">string CourseSection</Member>
+        <Member type="Method">public boolean SaveList()</Member>
+        <Member type="Method">public void EditList()</Member>
+        <Member type="Method">public void DeleteList()</Member>
+        <Member type="Method">public void AddCourse()</Member>
+        <Member type="Method">public void DeleteCourse()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RegistrationList</Name>
+        <Access>Public</Access>
+        <Location left="351" top="1358" />
+        <Size width="162" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int Term</Member>
+        <Member type="Field">string CourseName</Member>
+        <Member type="Field">int CRN</Member>
+        <Member type="Field">string CourseSection</Member>
+        <Member type="Method">public boolean SaveList()</Member>
+        <Member type="Method">public void EditList()</Member>
+        <Member type="Method">public void DeleteList()</Member>
+        <Member type="Method">public void AddCourse()</Member>
+        <Member type="Method">public override bool DeleteCourse()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Plan</Name>
+        <Access>Public</Access>
+        <Location left="690" top="1358" />
+        <Size width="162" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int Term</Member>
+        <Member type="Field">string CourseName</Member>
+        <Member type="Field">int CRN</Member>
+        <Member type="Field">string CourseSection</Member>
+        <Member type="Method">public boolean SaveList()</Member>
+        <Member type="Method">public void EditList()</Member>
+        <Member type="Method">public void DeleteList()</Member>
+        <Member type="Method">public void AddCourse()</Member>
+        <Member type="Method">public void DeleteCourse()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Generalization" first="3" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>362</X>
+          <Y>286</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="2" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="1" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>123</X>
+          <Y>304</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>362</X>
+          <Y>289</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="8" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="9" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="5" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>171</X>
+          <Y>773</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="5" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>410</X>
+          <Y>763</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="5" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>876</X>
+          <Y>707</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>654</X>
+          <Y>756</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>121</X>
+          <Y>778</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>362</X>
+          <Y>756</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="3" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="6">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>120</X>
+          <Y>1305</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>120</X>
+          <Y>1333</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="3" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>558</X>
+          <Y>756</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>386</X>
+          <Y>1010</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="3" second="9">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>633</X>
+          <Y>756</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>820</X>
+          <Y>1007</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
